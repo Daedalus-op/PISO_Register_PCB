@@ -1035,7 +1035,7 @@
 		(uuid "404d06ff-61ad-4293-9f6e-1b5d0e653fb8")
 		(at 141.46 99.5 -90)
 		(property "Reference" "S1"
-			(at 0.175 -5.425 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "6aa56bc9-4996-4e82-a2e2-e72140dc48a6")
 			(effects
@@ -1046,7 +1046,7 @@
 			)
 		)
 		(property "Value" "DS04-254-2-03BK-SMT"
-			(at 0 6.46 90)
+			(at -7.5 -4.54 180)
 			(layer "F.Fab")
 			(uuid "e312c62c-68bd-4006-a87e-0cee1a69fb6a")
 			(effects
@@ -2798,7 +2798,7 @@
 		(uuid "da640f48-22a4-4a59-a741-28bf72f6c87a")
 		(at 151.46 99.45 -90)
 		(property "Reference" "S2"
-			(at 0.175 -5.425 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "bc40f3c7-3b68-48a4-b752-9246f9ca4a5e")
 			(effects
@@ -2811,6 +2811,7 @@
 		(property "Value" "DS04-254-2-03BK-SMT"
 			(at 0.05 -7.04 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "4c43d0e1-c112-4694-93b9-1d12cda2f5c7")
 			(effects
 				(font
@@ -3230,7 +3231,7 @@
 		(uuid "e48903d9-c1b5-4922-b88b-07b1f4b8d628")
 		(at 118.5 100 180)
 		(property "Reference" "SW1"
-			(at -2.3627 -3.844398 180)
+			(at 0 0 180)
 			(layer "F.SilkS")
 			(uuid "859846bf-7453-4b5a-95a5-267d9a6aad3e")
 			(effects
@@ -4357,6 +4358,175 @@
 		(fill none)
 		(layer "Edge.Cuts")
 		(uuid "9647ea11-3de0-4923-8093-25384b5dcc26")
+	)
+	(gr_text "RST"
+		(at 139.5 108.5 90)
+		(layer "F.Cu")
+		(uuid "07e91dd5-cff6-4060-9bab-78b6d6aec506")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Din0"
+		(at 154 109 90)
+		(layer "F.Cu")
+		(uuid "28c2e92a-4fbe-4df7-9be6-063f6ff82e38")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "CLK"
+		(at 113.5 102.5 90)
+		(layer "F.Cu")
+		(uuid "32f60b1c-bf1f-4879-9338-21eaa11009fb")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Din3"
+		(at 145 109 90)
+		(layer "F.Cu")
+		(uuid "5dd86122-8cd2-4926-98d4-6569c357b1b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Din1"
+		(at 152 109 90)
+		(layer "F.Cu")
+		(uuid "6129cbf3-ef63-4e48-892c-c0c899fdb9b4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "En"
+		(at 143 108 90)
+		(layer "F.Cu")
+		(uuid "c1fce53e-6cab-4121-9e7a-207843659ff8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Din2"
+		(at 149.5 109 90)
+		(layer "F.Cu")
+		(uuid "e6c57b77-cdd9-4cb1-9885-e6c631838bfc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "DUAL D_FFs\n"
+		(at 180.5 136 0)
+		(layer "B.Cu")
+		(uuid "42048a31-3300-4150-bd8e-e5f7f67e7320")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "PTV"
+		(at 107.5 158 0)
+		(layer "B.Cu")
+		(uuid "624d8a1e-9d31-4a16-866e-e6599645d198")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "O/Ps"
+		(at 159 157 0)
+		(layer "B.Cu")
+		(uuid "66bfac42-495e-4bfd-b624-543cdb28dda0")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "MUX"
+		(at 147.5 130 0)
+		(layer "B.Cu")
+		(uuid "a0e30a04-b976-4949-b934-5e644c0c25bf")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "I/Ps\n"
+		(at 148.5 100.5 0)
+		(layer "B.Cu")
+		(uuid "ab5612ec-c715-4efc-971f-822675345971")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "DUAL D_FFs\n"
+		(at 126.5 136 0)
+		(layer "B.Cu")
+		(uuid "c9138d8a-9c8a-4c27-b395-6f5984e4fae2")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
 	)
 	(segment
 		(start 167 128.96)
