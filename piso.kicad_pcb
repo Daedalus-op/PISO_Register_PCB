@@ -1041,7 +1041,7 @@
 		(at 123 145.29 90)
 		(descr "<b>RESISTOR</b>")
 		(property "Reference" "R1"
-			(at -0.406158 -1.250001 270)
+			(at -0.406158 -1.250001 -90)
 			(layer "F.SilkS")
 			(uuid "3e5e6a5d-c8ca-43fa-bb28-27d8325494d6")
 			(effects
@@ -1052,7 +1052,7 @@
 			)
 		)
 		(property "Value" "RP73D1J13RBTDG"
-			(at 1.435366 1.266695 270)
+			(at 1.435366 1.266695 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "75627297-bc3f-4ba0-8dd6-cced91d05b6f")
@@ -1334,7 +1334,7 @@
 		(at 130 143.79 90)
 		(descr "<b>RESISTOR</b>")
 		(property "Reference" "R2"
-			(at -0.406158 -1.250001 270)
+			(at -0.406158 -1.250001 -90)
 			(layer "F.SilkS")
 			(uuid "4e928f62-7afe-42e1-b170-46652d3d9e9b")
 			(effects
@@ -1345,7 +1345,7 @@
 			)
 		)
 		(property "Value" "RP73D1J13RBTDG"
-			(at 1.435366 1.266695 270)
+			(at 1.435366 1.266695 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "baf51acb-e955-4a02-aa06-64f89b6e9d39")
@@ -1627,7 +1627,7 @@
 		(at 147 145 90)
 		(descr "<b>RESISTOR</b>")
 		(property "Reference" "R4"
-			(at -0.406158 -1.250001 270)
+			(at -0.406158 -1.250001 -90)
 			(layer "F.SilkS")
 			(uuid "09a8bf7c-d1ac-47cb-bbd5-411bd4532363")
 			(effects
@@ -1638,7 +1638,7 @@
 			)
 		)
 		(property "Value" "RP73D1J13RBTDG"
-			(at 1.435366 1.266695 270)
+			(at 1.435366 1.266695 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "28d8698b-4a3e-4809-97d5-cf48717350fa")
@@ -3454,7 +3454,7 @@
 		(at 138.5 144.79 90)
 		(descr "<b>RESISTOR</b>")
 		(property "Reference" "R3"
-			(at -0.406158 -1.250001 270)
+			(at -0.406158 -1.250001 -90)
 			(layer "F.SilkS")
 			(uuid "0f5e9b3d-261c-4b09-bd38-233c2d1e46b6")
 			(effects
@@ -3465,7 +3465,7 @@
 			)
 		)
 		(property "Value" "RP73D1J13RBTDG"
-			(at 1.435366 1.266695 270)
+			(at 1.435366 1.266695 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "036ccc10-db1a-48ee-9232-7fd44387fb00")
@@ -3747,7 +3747,7 @@
 		(at 172 145.29 90)
 		(descr "<b>RESISTOR</b>")
 		(property "Reference" "R5"
-			(at -0.406158 -1.250001 270)
+			(at -0.406158 -1.250001 -90)
 			(layer "F.SilkS")
 			(uuid "a8ac5e62-a010-4795-ab50-e33286815b39")
 			(effects
@@ -3758,7 +3758,7 @@
 			)
 		)
 		(property "Value" "RP73D1J13RBTDG"
-			(at 1.435366 1.266695 270)
+			(at 1.435366 1.266695 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "607a2a53-f423-4ba3-9658-bd1a1dc2ed83")
