@@ -88,10 +88,10 @@
 	(net 6 "CLK")
 	(net 7 "RST")
 	(net 8 "En")
-	(net 9 "Net-(U3-~{Q1})")
-	(net 10 "Net-(U3-~{Q2})")
-	(net 11 "Net-(U4-~{Q1})")
-	(net 12 "Net-(U4-~{Q2})")
+	(net 9 "Net-(D0-A)")
+	(net 10 "Net-(D1-A)")
+	(net 11 "Net-(D2-A)")
+	(net 12 "Net-(D3-A)")
 	(net 13 "unconnected-(SW1-Pad2)")
 	(net 14 "unconnected-(SW1-Pad4)")
 	(net 15 "Vdd")
@@ -103,6 +103,11 @@
 	(net 21 "Net-(U2-S1B)")
 	(net 22 "Net-(U2-S2B)")
 	(net 23 "Net-(U2-S3B)")
+	(net 24 "Net-(Dout1-A)")
+	(net 25 "unconnected-(U3-~{Q2}-Pad12)")
+	(net 26 "unconnected-(U3-~{Q1}-Pad2)")
+	(net 27 "unconnected-(U4-~{Q1}-Pad2)")
+	(net 28 "unconnected-(U4-~{Q2}-Pad12)")
 	(footprint "LED_THT:LED_D5.0mm"
 		(layer "F.Cu")
 		(uuid "029e7b73-3505-48b9-98e6-9cb7554e7667")
@@ -315,7 +320,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 3 "D2")
+			(net 11 "Net-(D2-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "41942a89-6f2f-44d3-93c3-6fe548ce5e12")
@@ -1013,7 +1018,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "D0")
+			(net 9 "Net-(D0-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "238294e3-ddaf-4f2a-b48c-978961f51b64")
@@ -1028,6 +1033,885 @@
 			(rotate
 				(xyz 0 0 0)
 			)
+		)
+	)
+	(footprint "RP73D1J13RBTDG:RESC1608X50N"
+		(layer "F.Cu")
+		(uuid "2165bd6d-16b7-4c11-b128-539c2f8c16cd")
+		(at 123 145.29 90)
+		(descr "<b>RESISTOR</b>")
+		(property "Reference" "R1"
+			(at -0.406158 -1.250001 270)
+			(layer "F.SilkS")
+			(uuid "3e5e6a5d-c8ca-43fa-bb28-27d8325494d6")
+			(effects
+				(font
+					(size 0.415311 0.415311)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "RP73D1J13RBTDG"
+			(at 1.435366 1.266695 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75627297-bc3f-4ba0-8dd6-cced91d05b6f")
+			(effects
+				(font
+					(size 0.413993 0.413993)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "RP73D1J13RBTDG:RESC1608X50N"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4f4e8de-8dfe-405b-93c8-e71b5b6f931e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0aa50633-5cbb-41ad-bfbb-25becc646ed0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c30a934-bed6-4384-886e-a05be3d9ed25")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" "TE Connectivity"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "87a2a125-53f7-4399-a86a-ec11548486c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description_1" "\nRes, Thin Film, 13r, 0.1%, 0.1w, 0603\n"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "37a3b6a1-fe41-49b0-bf1b-ab097acd6d0a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "0603 TE Connectivity / AMP"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "37d35350-4560-4415-a1a3-34238e5c11c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Price" "None"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a3b93056-4b84-4bdd-84f4-b50b5831f00e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/RP73D1J13RBTDG/TE+Connectivity/view-part/?ref=snap"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1786a2c2-31dd-4ed0-8d8c-e405c4ceff7e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MP" "RP73D1J13RBTDG"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03c5afd9-6c4c-4bc0-800f-4000c09575f7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a192d26-e5c0-43a5-9bd7-56a806539065")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/RP73D1J13RBTDG/TE+Connectivity/view-part/?ref=eda"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c89fe3b1-688a-47fd-ac95-73e445ff592b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/474cc5f4-2ab5-4467-b000-451b539b32ae")
+		(sheetname "Root")
+		(sheetfile "piso.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.8 -0.69)
+			(end 0.8 -0.69)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "13a47c67-1964-41c2-8bcf-4389104c7a57")
+		)
+		(fp_line
+			(start -0.8 0.69)
+			(end 0.8 0.69)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b013b11b-58a1-48f1-90f1-33cbbcb0c70c")
+		)
+		(fp_line
+			(start 1.51 -0.76)
+			(end 1.51 0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "836fc327-b81a-4000-8bad-645c8d6a59e7")
+		)
+		(fp_line
+			(start -1.51 -0.76)
+			(end 1.51 -0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "6926a220-1a53-4ad9-a342-83febdfb57f9")
+		)
+		(fp_line
+			(start 1.51 0.76)
+			(end -1.51 0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d0ae7245-4e8e-4d11-9490-4c7011c511c9")
+		)
+		(fp_line
+			(start -1.51 0.76)
+			(end -1.51 -0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "716f598c-fe68-44f6-a651-db10f7dd1038")
+		)
+		(fp_line
+			(start 0.9 -0.5)
+			(end 0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "63426765-f428-4ae1-aca4-3d02a54f8cbd")
+		)
+		(fp_line
+			(start -0.9 -0.5)
+			(end 0.9 -0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f1406f80-a9c3-4e5e-ae87-c1f105efd90d")
+		)
+		(fp_line
+			(start -0.9 -0.5)
+			(end -0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e4ff0a60-f3a3-4c35-9b58-b211c3e493ca")
+		)
+		(fp_line
+			(start -0.9 0.5)
+			(end 0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b149e13a-2e59-48e9-8678-916b8f9b783b")
+		)
+		(pad "1" smd roundrect
+			(at -0.79 0 90)
+			(size 0.94 1.02)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.1)
+			(net 12 "Net-(D3-A)")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "83dd0cf5-5137-4290-8f1b-de64d1b356c8")
+		)
+		(pad "2" smd roundrect
+			(at 0.79 0 90)
+			(size 0.94 1.02)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.1)
+			(net 4 "D3")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "c7e59227-8540-4df7-8dc3-e99272fa4a46")
+		)
+	)
+	(footprint "RP73D1J13RBTDG:RESC1608X50N"
+		(layer "F.Cu")
+		(uuid "2b6aa759-7211-4a44-ae0a-14bc6dfb29bc")
+		(at 130 143.79 90)
+		(descr "<b>RESISTOR</b>")
+		(property "Reference" "R2"
+			(at -0.406158 -1.250001 270)
+			(layer "F.SilkS")
+			(uuid "4e928f62-7afe-42e1-b170-46652d3d9e9b")
+			(effects
+				(font
+					(size 0.415311 0.415311)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "RP73D1J13RBTDG"
+			(at 1.435366 1.266695 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "baf51acb-e955-4a02-aa06-64f89b6e9d39")
+			(effects
+				(font
+					(size 0.413993 0.413993)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "RP73D1J13RBTDG:RESC1608X50N"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fdc1aaaa-9187-49f5-bd7e-249e6a5e727b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a90eec2-ba29-43b4-9f1e-1af5d6d362ec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44577634-0b40-4c28-a4a0-feda7075818c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" "TE Connectivity"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d676b64-b7c9-4082-be2b-7e30424681fb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description_1" "\nRes, Thin Film, 13r, 0.1%, 0.1w, 0603\n"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8fd28ea-f4a8-4383-aad9-c24dd6818f01")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "0603 TE Connectivity / AMP"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28c06cee-1475-450a-997a-2d6eed38c143")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Price" "None"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56ac9c6c-2930-46a0-bda3-a0790d8db1c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/RP73D1J13RBTDG/TE+Connectivity/view-part/?ref=snap"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3db05dc3-4c83-43d5-aee1-c39fde19698d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MP" "RP73D1J13RBTDG"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "40f0ce71-2415-4eb4-82cf-a86d5e30201f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2480aa48-2dd5-4efa-89c3-c07421c69c47")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/RP73D1J13RBTDG/TE+Connectivity/view-part/?ref=eda"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe029f00-9abd-4aa8-b28a-ad51420ec301")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/25e5a291-6c3a-48ae-b54f-1a0c9ff40692")
+		(sheetname "Root")
+		(sheetfile "piso.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.8 -0.69)
+			(end 0.8 -0.69)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6ce34508-ff22-4da6-bb7c-9aaa54789d7e")
+		)
+		(fp_line
+			(start -0.8 0.69)
+			(end 0.8 0.69)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "55df8366-5fa6-434a-8fcc-f76a32783af1")
+		)
+		(fp_line
+			(start 1.51 -0.76)
+			(end 1.51 0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3d319a2a-cd70-4ac3-931c-e7a2f4fcc5a8")
+		)
+		(fp_line
+			(start -1.51 -0.76)
+			(end 1.51 -0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1dcb09f4-9cd2-4af7-a6ff-ded2d2a04ed6")
+		)
+		(fp_line
+			(start 1.51 0.76)
+			(end -1.51 0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b9712087-67e4-4737-841c-7507128e657e")
+		)
+		(fp_line
+			(start -1.51 0.76)
+			(end -1.51 -0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "75a27ac8-f477-4765-be8c-82f7d596db4f")
+		)
+		(fp_line
+			(start 0.9 -0.5)
+			(end 0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "deed75a8-9dc7-44b4-bac0-40a2f64bc2e0")
+		)
+		(fp_line
+			(start -0.9 -0.5)
+			(end 0.9 -0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "48f73535-7ae5-4169-bdf0-b771d480525a")
+		)
+		(fp_line
+			(start -0.9 -0.5)
+			(end -0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f3639862-23c2-4b85-8171-429631b16111")
+		)
+		(fp_line
+			(start -0.9 0.5)
+			(end 0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ca278854-e4e5-47b3-a590-40843933d921")
+		)
+		(pad "1" smd roundrect
+			(at -0.79 0 90)
+			(size 0.94 1.02)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.1)
+			(net 11 "Net-(D2-A)")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "fe52b417-8dc9-4b2b-be4f-5e88b212816c")
+		)
+		(pad "2" smd roundrect
+			(at 0.79 0 90)
+			(size 0.94 1.02)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.1)
+			(net 3 "D2")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "d585cf67-b64c-471f-bc9f-42221f58bcb0")
+		)
+	)
+	(footprint "RP73D1J13RBTDG:RESC1608X50N"
+		(layer "F.Cu")
+		(uuid "3196e472-3ea6-407c-b9cd-d484b9d1f91e")
+		(at 147 145 90)
+		(descr "<b>RESISTOR</b>")
+		(property "Reference" "R4"
+			(at -0.406158 -1.250001 270)
+			(layer "F.SilkS")
+			(uuid "09a8bf7c-d1ac-47cb-bbd5-411bd4532363")
+			(effects
+				(font
+					(size 0.415311 0.415311)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "RP73D1J13RBTDG"
+			(at 1.435366 1.266695 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28d8698b-4a3e-4809-97d5-cf48717350fa")
+			(effects
+				(font
+					(size 0.413993 0.413993)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "RP73D1J13RBTDG:RESC1608X50N"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b272fd25-4c27-4957-8417-f00b08209dc3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b1002a25-9048-46cc-8f44-07be7b3f20fa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8fa0af5e-4644-40ff-af4e-be5510012c2d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" "TE Connectivity"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19c9956e-64ad-442f-98be-b7586b5fd616")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description_1" "\nRes, Thin Film, 13r, 0.1%, 0.1w, 0603\n"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d703475-8497-4307-a8e8-944ae1d41afb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "0603 TE Connectivity / AMP"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ee65560-91e9-4fa1-8472-dc84a5804408")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Price" "None"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "364a1cd3-90cf-4046-a1bf-d0123343da62")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/RP73D1J13RBTDG/TE+Connectivity/view-part/?ref=snap"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "147c6386-f537-4846-b0f1-6aa225175f23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MP" "RP73D1J13RBTDG"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2c65b731-5772-40da-853f-6e4bace47f24")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e756ac3e-e81f-4cca-8577-c238bf456b03")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/RP73D1J13RBTDG/TE+Connectivity/view-part/?ref=eda"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a22fbdbf-31ae-497d-a31b-ac12a5ea53fa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/aa7c11e9-131b-4b84-a709-7efac7d619f1")
+		(sheetname "Root")
+		(sheetfile "piso.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.8 -0.69)
+			(end 0.8 -0.69)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fe4c8a3a-d7a3-4392-a8f7-1e4349fc75b2")
+		)
+		(fp_line
+			(start -0.8 0.69)
+			(end 0.8 0.69)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ea26ca82-248a-457f-92f4-dd32a95b40de")
+		)
+		(fp_line
+			(start 1.51 -0.76)
+			(end 1.51 0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "77644171-380b-46e2-b022-98e1225637f7")
+		)
+		(fp_line
+			(start -1.51 -0.76)
+			(end 1.51 -0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1fd54c74-8228-4e7c-8313-4434b8871efb")
+		)
+		(fp_line
+			(start 1.51 0.76)
+			(end -1.51 0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0438bbc2-1ce2-48c5-bfe4-212127cbf273")
+		)
+		(fp_line
+			(start -1.51 0.76)
+			(end -1.51 -0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c130cd1e-5e87-4265-8661-e7fff1f3773a")
+		)
+		(fp_line
+			(start 0.9 -0.5)
+			(end 0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ef508fb9-108a-478c-b67b-43168c45cf3a")
+		)
+		(fp_line
+			(start -0.9 -0.5)
+			(end 0.9 -0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "25c84998-952d-40eb-8a46-58f128d8ec04")
+		)
+		(fp_line
+			(start -0.9 -0.5)
+			(end -0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "98b54444-b78c-4a1a-a063-a25af6973bad")
+		)
+		(fp_line
+			(start -0.9 0.5)
+			(end 0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1621d3bd-93f6-446d-8956-281a0c098231")
+		)
+		(pad "1" smd roundrect
+			(at -0.79 0 90)
+			(size 0.94 1.02)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.1)
+			(net 9 "Net-(D0-A)")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "bca0645a-9644-4434-8951-b244ead50f9b")
+		)
+		(pad "2" smd roundrect
+			(at 0.79 0 90)
+			(size 0.94 1.02)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.1)
+			(net 1 "D0")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "a50d39f7-4228-43ab-95a9-3313b70d309a")
 		)
 	)
 	(footprint "DS04-254-2-03BK-SMT:SW_DS04-254-2-03BK-SMT"
@@ -1783,9 +2667,9 @@
 			(size 1.97 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.15)
-			(net 9 "Net-(U3-~{Q1})")
+			(net 26 "unconnected-(U3-~{Q1}-Pad2)")
 			(pinfunction "~{Q1}")
-			(pintype "output")
+			(pintype "output+no_connect")
 			(solder_mask_margin 0.102)
 			(uuid "9e14521a-188f-46a6-8da5-38c49bf69c97")
 		)
@@ -1893,9 +2777,9 @@
 			(size 1.97 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.15)
-			(net 10 "Net-(U3-~{Q2})")
+			(net 25 "unconnected-(U3-~{Q2}-Pad12)")
 			(pinfunction "~{Q2}")
-			(pintype "output")
+			(pintype "output+no_connect")
 			(solder_mask_margin 0.102)
 			(uuid "5d7fe826-23f1-4eb7-8394-e90d24bed658")
 		)
@@ -2341,7 +3225,7 @@
 		(at 174.5 150.5 180)
 		(descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
 		(tags "LED diameter 5.0mm 2 pins")
-		(property "Reference" "Dout"
+		(property "Reference" "Dout1"
 			(at 1.27 -3.96 180)
 			(layer "F.SilkS")
 			(uuid "570d3472-8225-4580-86c0-ad1cd25c2442")
@@ -2547,7 +3431,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 5 "Dout")
+			(net 24 "Net-(Dout1-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "3f3e2a40-8574-4b3a-9335-69cf51980864")
@@ -2562,6 +3446,592 @@
 			(rotate
 				(xyz 0 0 0)
 			)
+		)
+	)
+	(footprint "RP73D1J13RBTDG:RESC1608X50N"
+		(layer "F.Cu")
+		(uuid "ad734961-575e-4d15-b494-447656744114")
+		(at 138.5 144.79 90)
+		(descr "<b>RESISTOR</b>")
+		(property "Reference" "R3"
+			(at -0.406158 -1.250001 270)
+			(layer "F.SilkS")
+			(uuid "0f5e9b3d-261c-4b09-bd38-233c2d1e46b6")
+			(effects
+				(font
+					(size 0.415311 0.415311)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "RP73D1J13RBTDG"
+			(at 1.435366 1.266695 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "036ccc10-db1a-48ee-9232-7fd44387fb00")
+			(effects
+				(font
+					(size 0.413993 0.413993)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "RP73D1J13RBTDG:RESC1608X50N"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93964d4b-db92-4000-af55-fcab6a48ec51")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e82f1e9f-6845-4e0f-ae27-41fb134bd266")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5de0f04-bd9a-4aab-81e2-77f0e43368b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" "TE Connectivity"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "80eed403-28ba-4d95-a295-43728b144d47")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description_1" "\nRes, Thin Film, 13r, 0.1%, 0.1w, 0603\n"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "99650763-e3b2-4864-8b05-1137e5fbcbbc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "0603 TE Connectivity / AMP"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "614789d1-1385-4693-8b33-0671e390277c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Price" "None"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd29578d-027c-4720-a804-7061439a2233")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/RP73D1J13RBTDG/TE+Connectivity/view-part/?ref=snap"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "054b524a-2581-48d3-8d43-a83dee27200b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MP" "RP73D1J13RBTDG"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "765660e6-058d-4402-b975-a1336ba67678")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "386a6d2b-7cd2-43c0-8463-851f27dd534b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/RP73D1J13RBTDG/TE+Connectivity/view-part/?ref=eda"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8e176a55-4241-4082-8142-9f1e78c927ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/ff295424-57ea-42e8-9a85-343e1ae42c5a")
+		(sheetname "Root")
+		(sheetfile "piso.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.8 -0.69)
+			(end 0.8 -0.69)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "cb176b64-6088-4d2f-82a2-41cf69aa5ff9")
+		)
+		(fp_line
+			(start -0.8 0.69)
+			(end 0.8 0.69)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f86c8166-62b8-4555-8305-b360bd2179ce")
+		)
+		(fp_line
+			(start 1.51 -0.76)
+			(end 1.51 0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0e74f56d-4ecd-414b-9650-9c3b776888bf")
+		)
+		(fp_line
+			(start -1.51 -0.76)
+			(end 1.51 -0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "36d1fae7-54b5-4d79-b56b-5162487f6ec1")
+		)
+		(fp_line
+			(start 1.51 0.76)
+			(end -1.51 0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "507bf148-a3f0-46d6-b888-a2218d1a3177")
+		)
+		(fp_line
+			(start -1.51 0.76)
+			(end -1.51 -0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9069aab5-1537-4953-8e8a-2684bacf9aee")
+		)
+		(fp_line
+			(start 0.9 -0.5)
+			(end 0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "17fd4a99-968d-413e-84ce-b4f775b16acf")
+		)
+		(fp_line
+			(start -0.9 -0.5)
+			(end 0.9 -0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "29ae33d7-a7d7-48e5-955b-25f11a6c7153")
+		)
+		(fp_line
+			(start -0.9 -0.5)
+			(end -0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7fec8715-7894-4190-857c-4e8f1806283c")
+		)
+		(fp_line
+			(start -0.9 0.5)
+			(end 0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "dbfc3df2-38a9-4d2a-ae74-806c10a10f5d")
+		)
+		(pad "1" smd roundrect
+			(at -0.79 0 90)
+			(size 0.94 1.02)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.1)
+			(net 10 "Net-(D1-A)")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "eb6a839a-67e7-4887-85e5-12653f534f70")
+		)
+		(pad "2" smd roundrect
+			(at 0.79 0 90)
+			(size 0.94 1.02)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.1)
+			(net 2 "D1")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "9a9eec46-c3e9-4416-90d0-0387a006320d")
+		)
+	)
+	(footprint "RP73D1J13RBTDG:RESC1608X50N"
+		(layer "F.Cu")
+		(uuid "c0f4a0b7-15d0-4c10-8e11-4567107c0712")
+		(at 172 145.29 90)
+		(descr "<b>RESISTOR</b>")
+		(property "Reference" "R5"
+			(at -0.406158 -1.250001 270)
+			(layer "F.SilkS")
+			(uuid "a8ac5e62-a010-4795-ab50-e33286815b39")
+			(effects
+				(font
+					(size 0.415311 0.415311)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "RP73D1J13RBTDG"
+			(at 1.435366 1.266695 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "607a2a53-f423-4ba3-9658-bd1a1dc2ed83")
+			(effects
+				(font
+					(size 0.413993 0.413993)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "RP73D1J13RBTDG:RESC1608X50N"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0d50605c-939d-4368-8ed3-381d58d3163a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd3755a2-3dec-42d3-a1b6-b1bf70dfcac3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c405929-348e-4659-a3e0-ebf8cd639be6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" "TE Connectivity"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25530536-d2cd-46f4-bc66-ed8ac07bedf0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description_1" "\nRes, Thin Film, 13r, 0.1%, 0.1w, 0603\n"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6499a6e5-f4c8-48cb-815a-faec26c1b1be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "0603 TE Connectivity / AMP"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "313ade97-f99d-4b09-8bb9-0ce6d6c4e765")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Price" "None"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "24639d66-b8e9-4329-b24d-e6b5c03f6cd9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/RP73D1J13RBTDG/TE+Connectivity/view-part/?ref=snap"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "787c27d2-0435-43c1-905c-f7874e4f72aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MP" "RP73D1J13RBTDG"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a8e6d947-4fc5-4ee4-bd60-4e4b8bcb6073")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0cb0d2b6-3ccf-4ca6-b8f9-ffc3033b4445")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/RP73D1J13RBTDG/TE+Connectivity/view-part/?ref=eda"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6fb851cd-65d4-4455-8815-c91e6643f001")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/f12d372b-ea82-4be2-8dd9-46a9b3594540")
+		(sheetname "Root")
+		(sheetfile "piso.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.8 -0.69)
+			(end 0.8 -0.69)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6ff05fcd-cbe7-4de7-9d47-91268b6b5e48")
+		)
+		(fp_line
+			(start -0.8 0.69)
+			(end 0.8 0.69)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2b2cc828-03e8-4177-bef4-e13541f57ca4")
+		)
+		(fp_line
+			(start 1.51 -0.76)
+			(end 1.51 0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "56cd37e8-a5a9-4be9-acc2-65b265860754")
+		)
+		(fp_line
+			(start -1.51 -0.76)
+			(end 1.51 -0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "bf5db6a8-3ece-4e87-bebf-6db1b1d91368")
+		)
+		(fp_line
+			(start 1.51 0.76)
+			(end -1.51 0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "199d83ba-df68-4fcc-8ce1-e18691fa8003")
+		)
+		(fp_line
+			(start -1.51 0.76)
+			(end -1.51 -0.76)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3e195c68-133c-4d9c-843b-4d9ff0676d47")
+		)
+		(fp_line
+			(start 0.9 -0.5)
+			(end 0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0e56369c-557e-45df-bff9-f851a7d27ef8")
+		)
+		(fp_line
+			(start -0.9 -0.5)
+			(end 0.9 -0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9cc44fa0-b845-4625-8d45-622e127d8fda")
+		)
+		(fp_line
+			(start -0.9 -0.5)
+			(end -0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d5efe5c1-9065-44a1-a308-8633a845f513")
+		)
+		(fp_line
+			(start -0.9 0.5)
+			(end 0.9 0.5)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a9308d54-dad7-4c5c-86d7-adf62cd9dd47")
+		)
+		(pad "1" smd roundrect
+			(at -0.79 0 90)
+			(size 0.94 1.02)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.1)
+			(net 24 "Net-(Dout1-A)")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "37dc7081-c33d-4525-8569-87bf237ed978")
+		)
+		(pad "2" smd roundrect
+			(at 0.79 0 90)
+			(size 0.94 1.02)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.1)
+			(net 5 "Dout")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "8a27886f-26c4-4724-9baf-8432bf365bca")
 		)
 	)
 	(footprint "LED_THT:LED_D5.0mm"
@@ -2776,7 +4246,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 4 "D3")
+			(net 12 "Net-(D3-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "80ff1c79-d49c-4889-bcd3-fb13950d1675")
@@ -3980,9 +5450,9 @@
 			(size 1.97 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.15)
-			(net 11 "Net-(U4-~{Q1})")
+			(net 27 "unconnected-(U4-~{Q1}-Pad2)")
 			(pinfunction "~{Q1}")
-			(pintype "output")
+			(pintype "output+no_connect")
 			(solder_mask_margin 0.102)
 			(uuid "ea80b75c-fdeb-45ea-b67c-deacb11d8fe9")
 		)
@@ -4090,9 +5560,9 @@
 			(size 1.97 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.15)
-			(net 12 "Net-(U4-~{Q2})")
+			(net 28 "unconnected-(U4-~{Q2}-Pad12)")
 			(pinfunction "~{Q2}")
-			(pintype "output")
+			(pintype "output+no_connect")
 			(solder_mask_margin 0.102)
 			(uuid "f8b55069-dcba-44d3-abd9-720f2fe98463")
 		)
@@ -4331,7 +5801,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 2 "D1")
+			(net 10 "Net-(D1-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "c480596c-c56f-4492-89f1-2847a9a3509c")
@@ -4359,100 +5829,9 @@
 		(layer "Edge.Cuts")
 		(uuid "9647ea11-3de0-4923-8093-25384b5dcc26")
 	)
-	(gr_text "RST"
-		(at 139.5 108.5 90)
-		(layer "F.Cu")
-		(uuid "07e91dd5-cff6-4060-9bab-78b6d6aec506")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.25)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "Din0"
-		(at 154 109 90)
-		(layer "F.Cu")
-		(uuid "28c2e92a-4fbe-4df7-9be6-063f6ff82e38")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.25)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "CLK"
-		(at 113.5 102.5 90)
-		(layer "F.Cu")
-		(uuid "32f60b1c-bf1f-4879-9338-21eaa11009fb")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "Din3"
-		(at 145 109 90)
-		(layer "F.Cu")
-		(uuid "5dd86122-8cd2-4926-98d4-6569c357b1b6")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.25)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "Din1"
-		(at 152 109 90)
-		(layer "F.Cu")
-		(uuid "6129cbf3-ef63-4e48-892c-c0c899fdb9b4")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.25)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "En"
-		(at 143 108 90)
-		(layer "F.Cu")
-		(uuid "c1fce53e-6cab-4121-9e7a-207843659ff8")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.25)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "Din2"
-		(at 149.5 109 90)
-		(layer "F.Cu")
-		(uuid "e6c57b77-cdd9-4cb1-9885-e6c631838bfc")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.25)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
 	(gr_text "DUAL D_FFs\n"
 		(at 180.5 136 0)
-		(layer "B.Cu")
+		(layer "B.SilkS")
 		(uuid "42048a31-3300-4150-bd8e-e5f7f67e7320")
 		(effects
 			(font
@@ -4465,7 +5844,7 @@
 	)
 	(gr_text "PTV"
 		(at 107.5 158 0)
-		(layer "B.Cu")
+		(layer "B.SilkS")
 		(uuid "624d8a1e-9d31-4a16-866e-e6599645d198")
 		(effects
 			(font
@@ -4478,7 +5857,7 @@
 	)
 	(gr_text "O/Ps"
 		(at 159 157 0)
-		(layer "B.Cu")
+		(layer "B.SilkS")
 		(uuid "66bfac42-495e-4bfd-b624-543cdb28dda0")
 		(effects
 			(font
@@ -4491,7 +5870,7 @@
 	)
 	(gr_text "MUX"
 		(at 147.5 130 0)
-		(layer "B.Cu")
+		(layer "B.SilkS")
 		(uuid "a0e30a04-b976-4949-b934-5e644c0c25bf")
 		(effects
 			(font
@@ -4504,7 +5883,7 @@
 	)
 	(gr_text "I/Ps\n"
 		(at 148.5 100.5 0)
-		(layer "B.Cu")
+		(layer "B.SilkS")
 		(uuid "ab5612ec-c715-4efc-971f-822675345971")
 		(effects
 			(font
@@ -4517,7 +5896,7 @@
 	)
 	(gr_text "DUAL D_FFs\n"
 		(at 126.5 136 0)
-		(layer "B.Cu")
+		(layer "B.SilkS")
 		(uuid "c9138d8a-9c8a-4c27-b395-6f5984e4fae2")
 		(effects
 			(font
@@ -4526,6 +5905,97 @@
 				(bold yes)
 			)
 			(justify left bottom mirror)
+		)
+	)
+	(gr_text "RST"
+		(at 139.5 108.5 90)
+		(layer "F.SilkS")
+		(uuid "07e91dd5-cff6-4060-9bab-78b6d6aec506")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Din0"
+		(at 154 109 90)
+		(layer "F.SilkS")
+		(uuid "28c2e92a-4fbe-4df7-9be6-063f6ff82e38")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "CLK"
+		(at 113.5 102.5 90)
+		(layer "F.SilkS")
+		(uuid "32f60b1c-bf1f-4879-9338-21eaa11009fb")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Din3"
+		(at 145 109 90)
+		(layer "F.SilkS")
+		(uuid "5dd86122-8cd2-4926-98d4-6569c357b1b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Din1"
+		(at 152 109 90)
+		(layer "F.SilkS")
+		(uuid "6129cbf3-ef63-4e48-892c-c0c899fdb9b4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "En"
+		(at 143 108 90)
+		(layer "F.SilkS")
+		(uuid "c1fce53e-6cab-4121-9e7a-207843659ff8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Din2"
+		(at 149.5 109 90)
+		(layer "F.SilkS")
+		(uuid "e6c57b77-cdd9-4cb1-9885-e6c631838bfc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
 		)
 	)
 	(segment
@@ -4545,12 +6015,12 @@
 		(uuid "44c7f008-6d46-4a2b-b2c6-93db47ea5377")
 	)
 	(segment
-		(start 166.96 129)
-		(end 145.46 150.5)
+		(start 152.98 142.98)
+		(end 151.75 144.21)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 1)
-		(uuid "65dff636-00ec-49a7-94f3-6ddb68389cf0")
+		(uuid "6d919b38-9de5-479e-a254-809c66389d61")
 	)
 	(segment
 		(start 140.18 120.18)
@@ -4567,6 +6037,22 @@
 		(layer "F.Cu")
 		(net 1)
 		(uuid "8868e3d0-e4f8-459c-a18c-7aa57a4cc3fd")
+	)
+	(segment
+		(start 166.96 129)
+		(end 152.98 142.98)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "ba468ec6-afc0-406c-b561-d971a55e2ae4")
+	)
+	(segment
+		(start 151.75 144.21)
+		(end 147 144.21)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "c5acf8ad-05b4-43ad-b735-89a3225e8f12")
 	)
 	(segment
 		(start 171.05 127.58)
@@ -4626,6 +6112,14 @@
 		(uuid "355f956e-d257-4cc1-afb0-682881997ca7")
 	)
 	(segment
+		(start 144.46 144)
+		(end 138.5 144)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "371f2968-6180-4530-ac31-cb2eebc88aff")
+	)
+	(segment
 		(start 174.35 128.85)
 		(end 172.48 126.98)
 		(width 0.2)
@@ -4650,14 +6144,6 @@
 		(uuid "74e40a72-47af-40f7-9fb6-be2c9eb38c6b")
 	)
 	(segment
-		(start 159.96 128.5)
-		(end 137.96 150.5)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "976ecd67-a1b5-4dec-9378-bce1d8243ada")
-	)
-	(segment
 		(start 140.4 122.1)
 		(end 140 122.5)
 		(width 0.2)
@@ -4674,6 +6160,14 @@
 		(uuid "c2059abe-5298-4873-8792-4b29fe6bc57a")
 	)
 	(segment
+		(start 159.96 128.5)
+		(end 144.98 143.48)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "ee7f40fb-2021-43af-98fa-512b31719274")
+	)
+	(segment
 		(start 143.02 122.1)
 		(end 140.4 122.1)
 		(width 0.2)
@@ -4688,6 +6182,14 @@
 		(layer "F.Cu")
 		(net 2)
 		(uuid "f6f3d08f-d381-43d5-87bf-18759c9129d2")
+	)
+	(segment
+		(start 144.98 143.48)
+		(end 144.46 144)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "fa4f7a99-e038-46e1-85c6-340ad791d42d")
 	)
 	(via
 		(at 160 128.5)
@@ -4747,6 +6249,22 @@
 		(uuid "f6c0a37b-a1e4-4b32-b68d-645e404845b5")
 	)
 	(segment
+		(start 122.48 142.52)
+		(end 122.96 143)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "042927a6-ffbb-4162-9aa7-b3eae051a44f")
+	)
+	(segment
+		(start 116.215 136.255)
+		(end 122.48 142.52)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "0735f4c4-b4ef-4b08-aca3-cb4e55b47a1b")
+	)
+	(segment
 		(start 117.5 127.5)
 		(end 117.08 127.58)
 		(width 0.2)
@@ -4779,14 +6297,6 @@
 		(uuid "5c4c073b-8b39-4115-acc4-99c1e551410e")
 	)
 	(segment
-		(start 116.215 136.255)
-		(end 130.46 150.5)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "65fcd186-0d3c-41c1-8412-85727665f61f")
-	)
-	(segment
 		(start 117.08 127.58)
 		(end 116.215 128.445)
 		(width 0.2)
@@ -4809,6 +6319,14 @@
 		(layer "F.Cu")
 		(net 3)
 		(uuid "dec14a10-1989-4b1e-8cce-58829efe479c")
+	)
+	(segment
+		(start 122.96 143)
+		(end 130 143)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "e6f66f8d-5ee2-4182-88d4-f193fa3e7ad2")
 	)
 	(via
 		(at 146 124.5)
@@ -4884,6 +6402,14 @@
 		(uuid "261fa65f-a804-453a-a649-c9fa737926f8")
 	)
 	(via
+		(at 123 144.5)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 4)
+		(uuid "626b0611-b2c0-490d-89ae-bb13721f6132")
+	)
+	(via
 		(at 150.5 121)
 		(size 0.6)
 		(drill 0.3)
@@ -4917,12 +6443,20 @@
 		(uuid "1f50ce49-f79b-4d85-9a76-3e171727d01f")
 	)
 	(segment
-		(start 122.96 130)
-		(end 122.96 150.5)
+		(start 122.96 143.5)
+		(end 123 143.54)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 4)
-		(uuid "2dc77f32-1312-4131-b803-8c67eea97a57")
+		(uuid "83aca149-528d-49ba-beb3-8f17aa9ed081")
+	)
+	(segment
+		(start 123 143.54)
+		(end 123 144.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 4)
+		(uuid "a4572841-06a7-44f2-823f-020dd51b3130")
 	)
 	(segment
 		(start 150.5 121)
@@ -4941,36 +6475,20 @@
 		(uuid "d7c7395d-c725-4621-aef8-a03943ec946e")
 	)
 	(segment
+		(start 122.96 130)
+		(end 122.96 143.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 4)
+		(uuid "d7fd4d4f-751f-43d8-8d9a-d6f32b0d53e3")
+	)
+	(segment
 		(start 177.14 125.64)
 		(end 177.285 125.785)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 5)
-		(uuid "2a6bf983-0d72-4a7e-892c-1be39e1a8e69")
-	)
-	(segment
-		(start 177.285 125.785)
-		(end 177.285 145.175)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 5)
-		(uuid "73b9488d-3168-4a06-ad1d-b17026658e07")
-	)
-	(segment
-		(start 177.285 145.175)
-		(end 171.96 150.5)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 5)
-		(uuid "9225d86c-b88e-4452-ae94-afbcb81db0fd")
-	)
-	(segment
-		(start 171.05 122.5)
-		(end 171.800964 122.5)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 5)
-		(uuid "de04d399-9907-4141-a2c6-9e418a2ce4cc")
+		(uuid "1a82ec4c-10ad-4b7c-aa9d-210d89929aa9")
 	)
 	(segment
 		(start 171.800964 122.5)
@@ -4978,7 +6496,31 @@
 		(width 0.2)
 		(layer "F.Cu")
 		(net 5)
-		(uuid "f59f18b3-84e1-404a-8d3f-c09da4947c56")
+		(uuid "55214b7b-9eee-45e2-9dfd-de70e8a75d03")
+	)
+	(segment
+		(start 171.05 122.5)
+		(end 171.800964 122.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 5)
+		(uuid "59416971-ce8b-458d-af2f-6a2b53eb9dd4")
+	)
+	(segment
+		(start 173.785 144.5)
+		(end 172 144.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 5)
+		(uuid "6a780af0-7b24-496d-969c-551366af85b6")
+	)
+	(segment
+		(start 177.285 141)
+		(end 173.785 144.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 5)
+		(uuid "79c81eea-de81-443f-817d-baa4ea490764")
 	)
 	(segment
 		(start 174.940964 125.64)
@@ -4986,7 +6528,15 @@
 		(width 0.2)
 		(layer "F.Cu")
 		(net 5)
-		(uuid "fcd8a836-d9df-4a90-acfc-a5b7fe427479")
+		(uuid "8ef59034-c501-4e12-bdda-5385e8e31765")
+	)
+	(segment
+		(start 177.285 125.785)
+		(end 177.285 141)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 5)
+		(uuid "dac10230-51aa-4c19-b1dc-f3467c4045c2")
 	)
 	(segment
 		(start 120.81 126.31)
@@ -5243,6 +6793,70 @@
 		(layer "F.Cu")
 		(net 8)
 		(uuid "f19d6b71-2586-489a-bf00-829c215aef73")
+	)
+	(segment
+		(start 147 145.79)
+		(end 147 148.394314)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 9)
+		(uuid "1a98affc-7eaf-4c68-be1a-b01ab52b021d")
+	)
+	(segment
+		(start 147 148.394314)
+		(end 145.177157 150.217157)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 9)
+		(uuid "abfbb5b0-d6ed-4539-8648-4ff0b977b267")
+	)
+	(segment
+		(start 138.5 145.58)
+		(end 138.5 149.394314)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 10)
+		(uuid "3a55082a-5afd-410a-9490-cc4b79915059")
+	)
+	(segment
+		(start 138.5 149.394314)
+		(end 137.677157 150.217157)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 10)
+		(uuid "bc5e6abf-586c-41fe-8255-be5703c62a8e")
+	)
+	(segment
+		(start 130 149.474314)
+		(end 130.742843 150.217157)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 11)
+		(uuid "04786146-72b9-4829-a6d5-6c79c878c505")
+	)
+	(segment
+		(start 130 144.58)
+		(end 130 149.474314)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 11)
+		(uuid "b4dddc18-4bbd-47a4-adce-398ee31a2a34")
+	)
+	(segment
+		(start 123 150.46)
+		(end 122.96 150.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "891cc4d0-332e-4692-a36f-46efdf024a3e")
+	)
+	(segment
+		(start 123 146.08)
+		(end 123 150.46)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "d84fee97-1f22-45f9-a96b-052665470cec")
 	)
 	(segment
 		(start 99.5 156.5)
@@ -6439,5 +8053,21 @@
 		(layer "F.Cu")
 		(net 23)
 		(uuid "d2ac3311-7414-405d-b661-8f5016a0dd27")
+	)
+	(segment
+		(start 172 146.08)
+		(end 172 150.46)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 24)
+		(uuid "c4b36efc-1d6c-4ca3-a487-aa3aadc7f027")
+	)
+	(segment
+		(start 172 150.46)
+		(end 171.96 150.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 24)
+		(uuid "c57a3079-3cfd-4761-82ff-cfc88afa889d")
 	)
 )
