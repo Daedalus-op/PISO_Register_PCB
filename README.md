@@ -1,7 +1,7 @@
 ## PISO Register  
 A PCB Implementation    
-![Reference](https://www.electronics-tutorials.ws/wp-content/uploads/2018/05/sequential-seq23.gif)  
-### Refernce Schematic  
+![images](https://github.com/daedeleus/PISO_Register_PCB/assets/124076157/10c3da90-9306-4c9c-ae49-dee3e090cb03)  
+### Reference Schematic  
 ![Schematic](https://github.com/daedeleus/PISO_Register_PCB/blob/master/Schematic%20SS.png)  
 ### Final schematic  
 ![Layout](https://github.com/daedeleus/PISO_Register_PCB/blob/master/PCB%20layout.png)  
